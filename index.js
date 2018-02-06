@@ -1,6 +1,5 @@
 var pdf2text = require("pdf2text")
 var fs = require("fs")
-var sleep = require("sleep")
 var loadedFiles = {}
 
 /**
