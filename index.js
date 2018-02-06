@@ -41,14 +41,19 @@ function readAllSlides() {
 function searchCachedSlides(s) {
     for (var file in loadedFiles) {
         var pages = loadedFiles[file]
+        var found = false
         for (var page = 0; page < pages.length; page++) {
             for (var line = 0; line < pages[page].length; line++) {
                 // console.log(pages[page][line])
                 if (pages[page][line].toLowerCase().indexOf(s.toLowerCase()) >= 0) {
-                    console.log("\tFound: " + pages[page][line] + " in " + file + " on page " + page)
+                    console.log("\t" + file + ": " + pages[page][line].trim() + " -- on page " + page)
+                    found = true
                 }
             }
         }
+
+        if (found === true)
+            console.log("") // Add blank line between files
     }
 }
 
