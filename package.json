@@ -1,0 +1,12 @@
+{
+  "name": "search-slides",
+  "version": "1.0.0",
+  "description": "Search through pdf slides for specific text",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Daniel Fanara",
+  "license": "MIT",
+  "dependencies": {
+    "pdf2text": "^1.1.0"
+  }
+}

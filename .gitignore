@@ -1,3 +1,9 @@
+# Slides
+slides/*.pdf
+
+# Cached files
+cached-files.json
+
 # Logs
 logs
 *.log
